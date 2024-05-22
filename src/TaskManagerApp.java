@@ -42,6 +42,9 @@ public class TaskManagerApp extends JFrame{
         add(scrollPane);
         add(addButton);
         add(clearButton);
+
+        setVisible(true);
+        setResizable(false);
     }
 
     private static void addNewTask() {
@@ -65,5 +68,6 @@ public class TaskManagerApp extends JFrame{
         taskPanel.repaint();
     }
     public static void main(String[] args) {
+        new TaskManagerApp();
     }
 }
